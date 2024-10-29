@@ -13,7 +13,6 @@ module.exports = defineConfig({
     admin: {
       backendUrl: process.env.MEDUSA_BACKEND_URL,
     },
-    //@ts-ignore
     modules: [
       {
         resolve: "@medusajs/medusa/cache-redis",
