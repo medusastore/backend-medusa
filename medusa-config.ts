@@ -10,6 +10,10 @@ module.exports = defineConfig({
     workerMode: process.env.WORKER_MODE as "shared" | "worker" | "server",
     redisUrl: process.env.REDIS_URL,
     //@ts-ignore
+    admin: {
+      backendUrl: process.env.MEDUSA_BACKEND_URL,
+    },
+    //@ts-ignore
     modules: [
       {
         resolve: "@medusajs/medusa/cache-redis",
