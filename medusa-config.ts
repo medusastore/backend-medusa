@@ -8,32 +8,32 @@ module.exports = defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     workerMode: process.env.WORKER_MODE as "shared" | "worker" | "server",
-    redisUrl: process.env.REDIS_URL,
+    // redisUrl: process.env.REDIS_URL,
     //@ts-ignore
     admin: {
       backendUrl: process.env.MEDUSA_BACKEND_URL,
     },
     modules: [
-      {
+      /*{
         resolve: "@medusajs/medusa/cache-redis",
         options: {
           redisUrl: process.env.REDIS_URL,
         },
-      },
-      {
+      },*/
+      /*{
         resolve: "@medusajs/medusa/event-bus-redis",
         options: {
           redisUrl: process.env.REDIS_URL,
         },
-      },
-      {
+      },*/
+      /*{
         resolve: "@medusajs/medusa/workflow-engine-redis",
         options: {
           redis: {
             url: process.env.REDIS_URL,
           },
         },
-      },
+      },*/
       {
         resolve: "@medusajs/medusa/file",
         options: {
